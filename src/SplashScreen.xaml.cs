@@ -18,7 +18,7 @@ namespace CanaryLauncherUpdate
 {
 	public partial class SplashScreen : Window
 	{
-		static string launcerConfigUrl = "https://raw.githubusercontent.com/opentibiabr/canary-launcher/main/launcher_config.json";
+		static string launcerConfigUrl = "https://raw.githubusercontent.com/aqueleot-server/aquele-launcher/main/launcher_config.json";
 		// Load informations of launcher_config.json file
 		static ClientConfig clientConfig = ClientConfig.loadFromFile(launcerConfigUrl);
 
@@ -31,9 +31,12 @@ namespace CanaryLauncherUpdate
 		private string GetLauncherPath(bool onlyBaseDirectory = false)
 		{
 			string launcherPath = "";
-			if (string.IsNullOrEmpty(clientConfig.clientFolder) || onlyBaseDirectory) {
+			if (string.IsNullOrEmpty(clientConfig.clientFolder) || onlyBaseDirectory)
+			{
 				launcherPath = AppDomain.CurrentDomain.BaseDirectory.ToString();
-			} else {
+			}
+			else
+			{
 				launcherPath = AppDomain.CurrentDomain.BaseDirectory.ToString() + "/" + clientConfig.clientFolder;
 			}
 
@@ -56,7 +59,8 @@ namespace CanaryLauncherUpdate
 
 		private void StartClient()
 		{
-			if (File.Exists(GetLauncherPath() + "/bin/" + clientExecutableName)) {
+			if (File.Exists(GetLauncherPath() + "/bin/" + clientExecutableName))
+			{
 				Process.Start(GetLauncherPath() + "/bin/" + clientExecutableName);
 				this.Close();
 			}
@@ -71,9 +75,11 @@ namespace CanaryLauncherUpdate
 			}
 
 			// Start the client if the versions are the same
-			if (File.Exists(GetLauncherPath(true) + "/launcher_config.json")) {
+			if (File.Exists(GetLauncherPath(true) + "/launcher_config.json"))
+			{
 				string actualVersion = GetClientVersion(GetLauncherPath(true));
-				if (newVersion == actualVersion && Directory.Exists(GetLauncherPath()) ) {
+				if (newVersion == actualVersion && Directory.Exists(GetLauncherPath()))
+				{
 					StartClient();
 				}
 			}

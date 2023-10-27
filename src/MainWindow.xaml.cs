@@ -20,7 +20,7 @@ namespace CanaryLauncherUpdate
 {
 	public partial class MainWindow : Window
 	{
-		static string launcerConfigUrl = "https://raw.githubusercontent.com/opentibiabr/canary-launcher/main/launcher_config.json";
+		static string launcerConfigUrl = "https://raw.githubusercontent.com/aqueleot-server/aquele-launcher/main/launcher_config.json";
 		// Load informations of launcher_config.json file
 		static ClientConfig clientConfig = ClientConfig.loadFromFile(launcerConfigUrl);
 
@@ -38,9 +38,12 @@ namespace CanaryLauncherUpdate
 		private string GetLauncherPath(bool onlyBaseDirectory = false)
 		{
 			string launcherPath = "";
-			if (string.IsNullOrEmpty(clientConfig.clientFolder) || onlyBaseDirectory) {
+			if (string.IsNullOrEmpty(clientConfig.clientFolder) || onlyBaseDirectory)
+			{
 				launcherPath = AppDomain.CurrentDomain.BaseDirectory.ToString();
-			} else {
+			}
+			else
+			{
 				launcherPath = AppDomain.CurrentDomain.BaseDirectory.ToString() + "/" + clientConfig.clientFolder;
 			}
 
@@ -129,15 +132,18 @@ namespace CanaryLauncherUpdate
 		{
 			// If the files "eventschedule/boostedcreature/onlinenumbers" exist, set them as read-only
 			string eventSchedulePath = GetLauncherPath() + "/cache/eventschedule.json";
-			if (File.Exists(eventSchedulePath)) {
+			if (File.Exists(eventSchedulePath))
+			{
 				File.SetAttributes(eventSchedulePath, FileAttributes.ReadOnly);
 			}
 			string boostedCreaturePath = GetLauncherPath() + "/cache/boostedcreature.json";
-			if (File.Exists(boostedCreaturePath)) {
+			if (File.Exists(boostedCreaturePath))
+			{
 				File.SetAttributes(boostedCreaturePath, FileAttributes.ReadOnly);
 			}
 			string onlineNumbersPath = GetLauncherPath() + "/cache/onlinenumbers.json";
-			if (File.Exists(onlineNumbersPath)) {
+			if (File.Exists(onlineNumbersPath))
+			{
 				File.SetAttributes(onlineNumbersPath, FileAttributes.ReadOnly);
 			}
 		}
@@ -249,9 +255,12 @@ namespace CanaryLauncherUpdate
 		private void Client_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
 		{
 			progressbarDownload.Value = e.ProgressPercentage;
-			if (progressbarDownload.Value == 100) {
+			if (progressbarDownload.Value == 100)
+			{
 				labelDownloadPercent.Content = "Finishing, wait...";
-			} else {
+			}
+			else
+			{
 				labelDownloadPercent.Content = SizeSuffix(e.BytesReceived) + " / " + SizeSuffix(e.TotalBytesToReceive);
 			}
 		}
