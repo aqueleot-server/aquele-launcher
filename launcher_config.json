@@ -14,6 +14,6 @@
 		}
 	],
 	"clientFolder": "Tibia",
-	"newClientUrl": "https://github.com/aqueleot-server/aquele-launcher/releases/download/0.1.0/aqueleotclient.zip",
+	"newClientUrl": "https://github.com/aqueleot-server/aquele-launcher/releases/download/0.1.1/aqueleotclient.zip",
 	"clientExecutable": "client.exe"
 }
