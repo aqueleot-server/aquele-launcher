@@ -1,6 +1,6 @@
 {
 	"clientVersion": "13.20.13560",
-	"launcherVersion": "0.1.1",
+	"launcherVersion": "0.1.0",
 	"replaceFolders": true,
 	"replaceFolderName": [
 		{
@@ -14,6 +14,6 @@
 		}
 	],
 	"clientFolder": "Tibia",
-	"newClientUrl": "https://github.com/aqueleot-server/aquele-launcher/releases/download/0.1.1/aqueleotclient.zip",
+	"newClientUrl": "https://github.com/aqueleot-server/aquele-launcher/releases/download/0.1.2/aqueleotclient.zip",
 	"clientExecutable": "client.exe"
 }
