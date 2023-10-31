@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using LauncherConfig;
 
-namespace CanaryLauncherUpdate
+namespace AqueleLauncherUpdate
 {
 	public partial class SplashScreen : Window
 	{
