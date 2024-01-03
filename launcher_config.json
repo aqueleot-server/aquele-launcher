@@ -1,6 +1,6 @@
 {
-	"clientVersion": "13.20.13567",
-	"launcherVersion": "1.0.3",
+	"clientVersion": "13.20.13568",
+	"launcherVersion": "1.0.4",
 	"replaceFolders": true,
 	"replaceFolderName": [
 		{
@@ -14,6 +14,6 @@
 		}
 	],
 	"clientFolder": "AqueleOT",
-	"newClientUrl": "https://github.com/aqueleot-server/aquele-launcher/releases/download/1.0.3/aqueleotclient.zip",
+	"newClientUrl": "https://drive.usercontent.google.com/download?id=1wlObhYaWL7Ra2XasAFSK3g1okP71CEzt&export=download&authuser=0&confirm=t&uuid=e2ce0761-e6f2-46d7-a022-f995cb1a537a",
 	"clientExecutable": "client.exe"
 }
