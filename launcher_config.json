@@ -14,6 +14,6 @@
 		}
 	],
 	"clientFolder": "AqueleOT",
-	"newClientUrl": "https://dl.dropboxusercontent.com/scl/fi/va4h28hih90ng3rnxhmr9/aqueleotclient.zip?rlkey=dbwzcl4eyb0liw5qcevz8wo6o&dl=0",
+	"newClientUrl": "http://195.35.19.158:5001/aqueleotclient.zip ",
 	"clientExecutable": "client.exe"
 }
