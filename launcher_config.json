@@ -1,6 +1,6 @@
 {
-	"clientVersion": "15.20.13619",
-	"launcherVersion": "1.0.56",
+	"clientVersion": "15.20.13620",
+	"launcherVersion": "1.0.57",
 	"replaceFolders": true,
 	"replaceFolderName": [
 		{
@@ -14,6 +14,6 @@
 		}
 	],
 	"clientFolder": "AqueleOT",
-	"newClientUrl": "http://201.54.10.125:5001/aqueleotclient51.zip",
+	"newClientUrl": "http://201.54.10.125:5001/aqueleotclient52.zip",
 	"clientExecutable": "client.exe"
 }
