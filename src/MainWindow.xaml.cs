@@ -20,7 +20,7 @@ namespace AqueleLauncherUpdate
 {
 	public partial class MainWindow : Window
 	{
-		static string launcerConfigUrl = "https://raw.githubusercontent.com/aqueleot-server/aquele-launcher/main/launcher_config.json";
+		static string launcerConfigUrl = "https://aqueleot.com/resources/launcher_config.json";
 		// Load informations of launcher_config.json file
 		static ClientConfig clientConfig = ClientConfig.loadFromFile(launcerConfigUrl);
 
